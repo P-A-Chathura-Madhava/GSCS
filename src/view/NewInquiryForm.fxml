@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newInquiryContext" prefHeight="507.0" prefWidth="573.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewInquiryFormController">
+   <children>
+      <Label layoutX="80.0" layoutY="24.0" text="New Inquiry" textFill="#c0392b" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="342.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="248.0" layoutY="35.0" prefHeight="16.0" prefWidth="305.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0" />
+      <Label layoutX="24.0" layoutY="73.0" text="Name" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="73.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="98.0" layoutY="71.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="71.0" />
+      <Label layoutX="24.0" layoutY="119.0" text="Mobile" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="119.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMobile" layoutX="98.0" layoutY="117.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="117.0" />
+      <Label layoutX="24.0" layoutY="166.0" text="Degree" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="166.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbDegree" layoutX="98.0" layoutY="164.0" prefHeight="25.0" prefWidth="115.0" promptText="Select here" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="164.0" />
+      <Label layoutX="258.0" layoutY="166.0" text="Gender" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="166.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rBtnMale" layoutX="326.0" layoutY="168.0" text="Male" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="168.0" />
+      <JFXRadioButton fx:id="rBtnFemale" layoutX="424.0" layoutY="168.0" text="Female" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="168.0" />
+      <Label layoutX="24.0" layoutY="219.0" text="District" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="219.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDistrict" layoutX="91.0" layoutY="217.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="217.0" />
+      <Label layoutX="24.0" layoutY="261.0" text="Comments" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="261.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtComments" layoutX="91.0" layoutY="328.0" prefHeight="83.0" prefWidth="456.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="328.0" />
+      <Label layoutX="19.0" layoutY="359.0" text="Status" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="359.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtStatus" layoutX="98.0" layoutY="261.0" prefHeight="70.0" prefWidth="456.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="261.0" />
+      <JFXButton fx:id="btnOk" buttonType="RAISED" layoutX="462.0" layoutY="457.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #3498db;" text="OK" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="19.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="16.0" layoutY="31.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

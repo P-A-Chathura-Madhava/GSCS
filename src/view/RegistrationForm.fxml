@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registrationContext" prefHeight="636.0" prefWidth="568.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationFormController">
+   <children>
+      <Label layoutX="70.0" layoutY="15.0" text="Registration" textFill="#c0392b" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="229.0" layoutY="30.0" prefHeight="4.0" prefWidth="323.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="30.0" />
+      <Label layoutX="14.0" layoutY="63.0" text="Full Name" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="63.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="88.0" layoutY="61.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="61.0" />
+      <Label layoutX="14.0" layoutY="113.0" text="Address" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="113.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtAddress" layoutX="88.0" layoutY="113.0" prefHeight="45.0" prefWidth="456.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="113.0" />
+      <Label layoutX="15.0" layoutY="180.0" text="Degree" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDegree" layoutX="89.0" layoutY="178.0" prefHeight="25.0" prefWidth="214.0" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="178.0" />
+      <Label layoutX="15.0" layoutY="228.0" text="Language" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="89.0" layoutY="226.0" prefHeight="25.0" prefWidth="214.0" promptText="Select language" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="226.0" />
+      <Label layoutX="329.0" layoutY="180.0" text="Intake" AnchorPane.leftAnchor="329.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="401.0" layoutY="178.0" prefHeight="25.0" prefWidth="144.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="178.0" />
+      <Label layoutX="14.0" layoutY="276.0" text="Contact" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="276.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="88.0" layoutY="273.0" prefHeight="25.0" prefWidth="214.0" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="273.0" />
+      <Label layoutX="329.0" layoutY="228.0" text="Year" AnchorPane.leftAnchor="329.0" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbYear" layoutX="401.0" layoutY="226.0" prefHeight="25.0" prefWidth="144.0" promptText="----" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="226.0" />
+      <Label layoutX="318.0" layoutY="276.0" text="University" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="276.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="401.0" layoutY="273.0" onAction="#cmbUniversity" prefHeight="25.0" prefWidth="144.0" promptText="Select university" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="273.0" />
+      <Label layoutX="13.0" layoutY="329.0" text="Registration Number" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="329.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRegistrationNumber" layoutX="160.0" layoutY="327.0" prefHeight="25.0" prefWidth="239.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="327.0" />
+      <Label layoutX="17.0" layoutY="374.0" text="NIC" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="374.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNIC" layoutX="91.0" layoutY="371.0" prefHeight="25.0" prefWidth="184.0" AnchorPane.leftAnchor="91.0" AnchorPane.topAnchor="371.0" />
+      <Label layoutX="325.0" layoutY="375.0" text="Birth Place" AnchorPane.leftAnchor="325.0" AnchorPane.topAnchor="375.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtBirthPlace" layoutX="405.0" layoutY="372.0" prefHeight="25.0" prefWidth="144.0" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="372.0" />
+      <Label layoutX="13.0" layoutY="419.0" text="Birthday" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="419.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="420.0" text="Nationality" AnchorPane.leftAnchor="321.0" AnchorPane.topAnchor="420.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNationality" layoutX="401.0" layoutY="417.0" prefHeight="25.0" prefWidth="144.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="417.0" />
+      <JFXDatePicker fx:id="datePicker" layoutX="92.0" layoutY="417.0" prefHeight="25.0" prefWidth="184.0" AnchorPane.leftAnchor="92.0" AnchorPane.topAnchor="417.0" />
+      <Label layoutX="11.0" layoutY="464.0" text="E-Mail" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="464.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmail" layoutX="85.0" layoutY="462.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="462.0" />
+      <Label layoutX="11.0" layoutY="507.0" text="Occupation" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="507.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOccupation" layoutX="98.0" layoutY="505.0" prefHeight="25.0" prefWidth="443.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="505.0" />
+      <Label layoutX="10.0" layoutY="551.0" text="Organization" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="551.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrganization" layoutX="84.0" layoutY="549.0" prefHeight="25.0" prefWidth="456.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="549.0" />
+      <JFXButton fx:id="btnDocuments" buttonType="RAISED" layoutX="348.0" layoutY="595.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #3498db;" text="Documents" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="128.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnFinish" buttonType="RAISED" layoutX="457.0" layoutY="595.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #3498db;" text="Finish" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="19.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="15.0" layoutY="22.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

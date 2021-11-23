@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="allInquiriesFormContext" prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditInquiriesFormController">
+   <children>
+      <Label layoutX="84.0" layoutY="24.0" text="All Inquiries" textFill="#c0392b" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="243.0" layoutY="36.0" prefHeight="16.0" prefWidth="343.0" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="36.0" />
+      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="71.0" prefHeight="25.0" prefWidth="559.0" promptText="Search here" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="71.0" />
+      <TableView fx:id="tblInquiriesList" layoutX="24.0" layoutY="107.0" prefHeight="276.0" prefWidth="559.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="107.0">
+        <columns>
+          <TableColumn prefWidth="87.0" text="Date" />
+          <TableColumn prefWidth="120.0" text="Name" />
+            <TableColumn prefWidth="154.0" text="Address" />
+            <TableColumn text="Mobile" />
+            <TableColumn prefWidth="75.0" text="Opton" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="24.0" layoutY="31.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
