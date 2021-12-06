@@ -28,7 +28,8 @@ public class DashBoardFormController implements Initializable {
         openUI("RegistrationForm");
     }
 
-    public void openPaymentForm(ActionEvent actionEvent) {
+    public void openPaymentForm(ActionEvent actionEvent) throws IOException {
+        openUI("PaymentsDashBoardForm");
     }
 
     public void openAssignmentsForm(ActionEvent actionEvent) throws IOException {

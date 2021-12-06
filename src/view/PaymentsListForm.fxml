@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentsIndividualsFormContext" prefHeight="617.0" prefWidth="1379.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentsListFormController">
+   <children>
+      <Label layoutX="84.0" layoutY="24.0" text="All Payments" textFill="#c0392b" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="255.0" layoutY="36.0" prefHeight="16.0" prefWidth="1163.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="36.0" />
+      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="71.0" prefHeight="25.0" prefWidth="1397.0" promptText="Search here" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="71.0" />
+      <TableView fx:id="tblPaymentsList" layoutX="24.0" layoutY="196.0" prefHeight="403.0" prefWidth="1397.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="196.0">
+         <columns>
+            <TableColumn prefWidth="39.999969482421875" text="NO" />
+            <TableColumn prefWidth="73.0" text="Student ID" />
+            <TableColumn prefWidth="122.0" text="Student's Name" />
+            <TableColumn prefWidth="94.0" text="Mobile" />
+            <TableColumn prefWidth="107.0" text="WhatsApp" />
+            <TableColumn prefWidth="175.0" text="Email" />
+            <TableColumn prefWidth="106.0" text="Total Fee" />
+            <TableColumn prefWidth="73.0" text="Discount" />
+            <TableColumn prefWidth="118.0" text="Monthly Payment" />
+            <TableColumn prefWidth="103.0" text="Downpayment" />
+            <TableColumn prefWidth="69.0" text="Reduction" />
+            <TableColumn prefWidth="114.0" text="Amount to be paid" />
+            <TableColumn prefWidth="165.0" text="Monthly Areace" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="24.0" layoutY="31.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="24.0" layoutY="108.0" text="Course Level" />
+      <Label layoutX="300.0" layoutY="108.0" text="Programme" />
+      <Label layoutX="24.0" layoutY="133.0" text="Medium" />
+      <Label layoutX="300.0" layoutY="133.0" text="Intake" />
+      <Label layoutX="24.0" layoutY="161.0" text="Acedemic Year" />
+   </children>
+</AnchorPane>

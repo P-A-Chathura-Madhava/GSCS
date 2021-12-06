@@ -56,6 +56,11 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></JFXButton>
+            <JFXButton fx:id="btnBill1" layoutY="30.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #2980b9;" text="Students">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children></AnchorPane>
       <Label fx:id="Menu" contentDisplay="CENTER" layoutX="-2.0" layoutY="65.0" prefHeight="22.0" prefWidth="92.0" style="-fx-background-color: #bdc3c7;" text="   MENU" textFill="#c0392b" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="65.0">
          <font>
