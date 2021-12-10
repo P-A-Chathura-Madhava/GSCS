@@ -11,14 +11,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="newInquiryContext" prefHeight="507.0" prefWidth="573.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewInquiryFormController">
+<AnchorPane fx:id="newInquiryContext" prefHeight="466.0" prefWidth="573.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewInquiryFormController">
    <children>
-      <Label layoutX="80.0" layoutY="24.0" text="New Inquiry" textFill="#c0392b" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="342.0" AnchorPane.topAnchor="24.0">
+      <Label layoutX="24.0" layoutY="24.0" text="New Inquiry" textFill="#ea2027" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="24.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Separator layoutX="248.0" layoutY="35.0" prefHeight="16.0" prefWidth="305.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0" />
+      <Separator layoutX="184.0" layoutY="35.0" prefHeight="16.0" prefWidth="369.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0" />
       <Label layoutX="24.0" layoutY="73.0" text="Name" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="73.0">
          <font>
             <Font size="14.0" />
@@ -62,18 +62,10 @@
          </font>
       </Label>
       <JFXTextArea fx:id="txtStatus" layoutX="98.0" layoutY="261.0" prefHeight="70.0" prefWidth="456.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="261.0" />
-      <JFXButton fx:id="btnOk" buttonType="RAISED" layoutX="462.0" layoutY="457.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #3498db;" text="OK" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="19.0">
+      <JFXButton fx:id="btnOk" buttonType="RAISED" layoutX="461.0" layoutY="419.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #3498db;" text="OK" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
-      </JFXButton>
-      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="16.0" layoutY="31.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="31.0">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
       </JFXButton>
    </children>
 </AnchorPane>

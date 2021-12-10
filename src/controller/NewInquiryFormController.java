@@ -20,10 +20,5 @@ public class NewInquiryFormController {
     public JFXTextArea txtComments;
     public JFXTextArea txtStatus;
     public JFXButton btnOk;
-    public JFXButton btnBack;
 
-    public void back(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage)newInquiryContext.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/InquiryDashBoardForm.fxml"))));
-    }
 }

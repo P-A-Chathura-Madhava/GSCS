@@ -4,7 +4,9 @@ import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -19,13 +21,14 @@ public class DashBoardFormController implements Initializable {
     public AnchorPane slider;
     public Label Menu;
     public Label MenuClose;
+    public Button btnInquiry;
 
-    public void openInquiryDashBoardForm(ActionEvent actionEvent) throws IOException {
-        openUI("InquiryDashBoardForm");
+    public void openInquiryForm(ActionEvent actionEvent) throws IOException {
+        openSeperateUI("EditInquiriesForm");
     }
 
     public void OpenRegistrationForm(ActionEvent actionEvent) throws IOException {
-        openUI("RegistrationForm");
+        openSeperateUI("RegistrationForm");
     }
 
     public void openPaymentForm(ActionEvent actionEvent) throws IOException {
@@ -39,6 +42,15 @@ public class DashBoardFormController implements Initializable {
     void openUI(String fileName) throws IOException {
         Stage stage = (Stage)dashBoardContext.getScene().getWindow();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+fileName+".fxml"))));
+    }
+
+    void openSeperateUI(String filename) throws IOException {
+        URL resource = getClass().getResource("../view/" + filename + ".fxml");
+        Parent load = FXMLLoader.load(resource);
+        Scene scene = new Scene(load);
+        Stage primaryStage =  new Stage();
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     @Override
@@ -76,4 +88,6 @@ public class DashBoardFormController implements Initializable {
             });
         });
     }
+
+
 }

@@ -27,12 +27,31 @@ public class RegistrationFormController {
     public JFXTextArea txtAddress;
     public JFXTextField txtName;
     public AnchorPane registrationContext;
+    public JFXButton btnPayment;
+    public JFXComboBox cmbDegreeCategory;
+
+    public void initialize(){
+        cmbDegreeCategory.getItems().addAll(
+          "Bachelor Degree", "Masters Degree"
+        );
+    }
 
     public void cmbUniversity(ActionEvent actionEvent) {
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage)registrationContext.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/DashBoardForm.fxml"))));
     }
+
+    public void openPaymentForm(ActionEvent actionEvent) throws IOException {
+        if((cmbDegreeCategory.getValue().toString()) == "Bachelor Degree"){
+            Stage stage = (Stage)registrationContext.getScene().getWindow();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/BachelorDegreeForm.fxml"))));
+        }else {
+            Stage stage = (Stage)registrationContext.getScene().getWindow();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/MastersDegreeForm.fxml"))));
+        }
+
+    }
+
+
 }

@@ -11,13 +11,13 @@
 
 <AnchorPane fx:id="dashBoardContext" prefHeight="373.0" prefWidth="497.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
     <children>
-        <Label layoutX="14.0" layoutY="14.0" text="Dashboard" textFill="#c0392b" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <Label layoutX="14.0" layoutY="14.0" text="Dashboard" textFill="#ea2027" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
             <font>
                 <Font name="System Bold" size="26.0" />
             </font>
         </Label>
         <Separator layoutX="154.0" layoutY="25.0" prefHeight="16.0" prefWidth="316.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="25.0" />
-        <Button fx:id="btnInquiry" layoutX="198.0" layoutY="105.0" mnemonicParsing="false" onAction="#openInquiryDashBoardForm" prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: #3498db;" text="Inquary" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="105.0">
+        <Button fx:id="btnInquiry" layoutX="198.0" layoutY="105.0" mnemonicParsing="false" onAction="#openInquiryForm" prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: #3498db;" text="Inquary" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="105.0">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
