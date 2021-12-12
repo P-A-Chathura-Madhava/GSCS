@@ -24,15 +24,15 @@ public class DashBoardFormController implements Initializable {
     public Button btnInquiry;
 
     public void openInquiryForm(ActionEvent actionEvent) throws IOException {
-        openSeperateUI("EditInquiriesForm");
+        openSeparateUI("EditInquiriesForm");
     }
 
     public void OpenRegistrationForm(ActionEvent actionEvent) throws IOException {
-        openSeperateUI("RegistrationForm");
+        openSeparateUI("RegistrationForm");
     }
 
     public void openPaymentForm(ActionEvent actionEvent) throws IOException {
-        openUI("PaymentsDashBoardForm");
+        openSeparateUI("PaymentsListForm");
     }
 
     public void openAssignmentsForm(ActionEvent actionEvent) throws IOException {
@@ -44,7 +44,7 @@ public class DashBoardFormController implements Initializable {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+fileName+".fxml"))));
     }
 
-    void openSeperateUI(String filename) throws IOException {
+    void openSeparateUI(String filename) throws IOException {
         URL resource = getClass().getResource("../view/" + filename + ".fxml");
         Parent load = FXMLLoader.load(resource);
         Scene scene = new Scene(load);

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
@@ -12,13 +11,13 @@
 
 <AnchorPane fx:id="paymentsIndividualsFormContext" prefHeight="617.0" prefWidth="1379.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentsListFormController">
    <children>
-      <Label layoutX="84.0" layoutY="24.0" text="All Payments" textFill="#c0392b" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="24.0">
+      <Label layoutX="22.0" layoutY="25.0" text="All Payments" textFill="#ea2027" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="25.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Separator layoutX="255.0" layoutY="36.0" prefHeight="16.0" prefWidth="1163.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="36.0" />
-      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="71.0" prefHeight="25.0" prefWidth="1397.0" promptText="Search here" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="71.0" />
+      <Separator layoutX="197.0" layoutY="36.0" prefHeight="16.0" prefWidth="1159.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="36.0" />
+      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="71.0" prefHeight="25.0" prefWidth="1397.0" promptText="Search here from Student ID" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="71.0" />
       <TableView fx:id="tblPaymentsList" layoutX="24.0" layoutY="196.0" prefHeight="403.0" prefWidth="1397.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="196.0">
          <columns>
             <TableColumn prefWidth="39.999969482421875" text="NO" />
@@ -36,18 +35,13 @@
             <TableColumn prefWidth="165.0" text="Monthly Areace" />
          </columns>
       </TableView>
-      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="24.0" layoutY="31.0" onAction="#back" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #3498db;" text="Back" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="31.0">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </JFXButton>
-      <Label layoutX="24.0" layoutY="108.0" text="Course Level" />
-      <Label layoutX="300.0" layoutY="108.0" text="Programme" />
-      <Label layoutX="24.0" layoutY="133.0" text="Medium" />
-      <Label layoutX="300.0" layoutY="133.0" text="Intake" />
-      <Label layoutX="24.0" layoutY="161.0" text="Acedemic Year" />
+      <Label layoutX="285.0" layoutY="108.0" text="Programme" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="108.0" />
+      <Label layoutX="24.0" layoutY="146.0" text="Medium" AnchorPane.topAnchor="146.0" />
+      <Label layoutX="285.0" layoutY="146.0" text="Intake" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="146.0" />
+      <Label layoutX="24.0" layoutY="108.0" text="Academic Year" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="108.0" />
+      <JFXComboBox fx:id="cmbAcademicYear" layoutX="120.0" layoutY="104.0" prefHeight="25.0" prefWidth="124.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="104.0" />
+      <JFXComboBox fx:id="cmbMedium" layoutX="120.0" layoutY="142.0" prefHeight="25.0" prefWidth="124.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="142.0" />
+      <JFXComboBox fx:id="cmbProgramme" layoutX="375.0" layoutY="104.0" prefHeight="25.0" prefWidth="124.0" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="104.0" />
+      <JFXComboBox fx:id="cmbIntake" layoutX="375.0" layoutY="142.0" prefHeight="25.0" prefWidth="124.0" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="142.0" />
    </children>
 </AnchorPane>
